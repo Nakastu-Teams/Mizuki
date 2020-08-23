@@ -1,9 +1,9 @@
 const Event = require("../structures/Event");
-const { ErelaClient } = require("erela.js");
+const {ErelaClient} = require("erela.js");
 class Ready extends Event {
   constructor(args) {
     super(args, {
-      name: "Ready",
+      name: "Ready"
     });
   }
 
@@ -16,8 +16,8 @@ class Ready extends Event {
         `${client.config.prefix}help || ${client.users.size} utilisateurs`,
         `${client.config.prefix}help || ${client.guilds.size} servers`,
         `${client.config.prefix}help || Version: ${
-          require(`../../package`).version
-        }`,
+          require("../../package").version
+        }`
       ];
 
       const index = Math.floor(
@@ -27,7 +27,7 @@ class Ready extends Event {
       client.editStatus("online", {
         name: activities_list[index],
         type: 1,
-        url: "https://www.twitch.tv/monstercat",
+        url: "https://www.twitch.tv/monstercat"
       });
     }, 20 * 1000);
   }

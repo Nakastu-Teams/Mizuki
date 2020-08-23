@@ -3,11 +3,12 @@
   "version": "0.1.0",
   "description": "Bot music developper avec la lib eris",
   "main": "index.js",
-  "repository": "h",
+  "repository": "https://github.com/Nakastu-Teams/Mizuki.git",
   "scripts": {
     "lavalink": "java -jar lavalink/Lavalink.jar",
     "dev": "nodemon index.js",
-    "start": "node index.js"
+    "start": "node index.js",
+    "eslint": "eslint -c .eslintrc.yml src *.js --fix"
   },
   "author": "scricker",
   "license": "MIT",
