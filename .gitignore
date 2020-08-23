@@ -1,0 +1,11 @@
+# Yarn 
+yarn-error.log
+yarn.lock
+
+# nodejs
+node_modules
+package-lock.json
+
+#Bot files
+configs.js
+lavalink/Lavalink.jar

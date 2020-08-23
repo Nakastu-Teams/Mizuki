@@ -1,0 +1,23 @@
+{
+  "name": "Mizuki",
+  "version": "0.1.0",
+  "description": "Bot music developper avec la lib eris",
+  "main": "index.js",
+  "repository": "h",
+  "scripts": {
+    "lavalink": "java -jar lavalink/Lavalink.jar",
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "author": "scricker",
+  "license": "MIT",
+  "dependencies": {
+    "erela.js": "^1.1.8",
+    "eris": "^0.13.3",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.6.0",
+    "nodemon": "^2.0.4"
+  }
+}

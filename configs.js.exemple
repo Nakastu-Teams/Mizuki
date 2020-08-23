@@ -1,0 +1,12 @@
+module.exports = {
+  token: "BOT_TOKEN",
+  prefix: "BOT_PREFIX",
+  OWNER_ID: [DEVS_IDS],
+  nodes: [
+    {
+      host: "localhost",
+      port: 2333,
+      password: "password",
+    },
+  ],
+};
