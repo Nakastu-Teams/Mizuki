@@ -1,6 +1,6 @@
 {
   "name": "Mizuki",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Bot music developper avec la lib eris",
   "main": "index.js",
   "repository": "https://github.com/Nakastu-Teams/Mizuki.git",

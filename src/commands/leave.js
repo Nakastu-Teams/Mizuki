@@ -10,14 +10,17 @@ module.exports = class Leave extends require("../structures/Command") {
     async run(message) {
         const client = this.client;
         try {
-            if(!client.player.players.get(message.member.guild.id)) {
+            const player = client.player.players.get(message.member.guild.id);
+            if(!player) {
                 return client.music.musicEmbed(
                     message,
                     "Je ne suis pas connecté dans un salon-vocal !"
                 );
             }
 
-            if(!message.member.guild.voiceStates.size == 0) {
+            if(!message.member.guild.voiceStates.get(message.author.id) ||
+                message.member.guild.voiceStates.get(message.author.id).channelID !=
+                player.voiceChannel) {
                 return client.music.musicEmbed(
                     message,
                     "Vous devez être connecté dans un salon-vocal !"
